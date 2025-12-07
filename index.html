@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>News</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <h1>Newsly</h1>
+    <p class="tag"> NewsHub</p>
+  </header>
+
+  <section class="controls">
+    <div class="left">
+      <label>Source
+        <select id="sourceSelect">
+          <option value="google">Google News</option>
+          <option value="bbc">BBC</option>
+          <option value="reddit">Reddit</option>
+        </select>
+      </label><br><br>
+
+      <label>Category / Search
+        <input id="categoryInput" placeholder="general / technology / sports / world / 'india' ..." />
+      </label>
+
+      <button id="loadBtn">search </button>
+    </div>
+
+    <div class="right">
+      <label>Sort
+        <select id="sortSelect">
+          <option value="new">Newest</option>
+          <option value="old">Oldest</option>
+        </select>
+      </label>
+      <button id="themeBtn">Theme</button>
+    </div>
+  </section>
+
+  <main>
+    <div id="status"></div>
+    <div id="newsContainer" class="grid"></div>
+  </main>
+
+  <footer>
+    <small> 24/7 NewsHub — @ BBC new. </small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
